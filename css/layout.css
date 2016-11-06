@@ -109,3 +109,33 @@ body, html {
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
+.ba-row:before, .ba-row:after {
+    content: " ";
+    display: table;
+}
+
+.ba-row:after {
+    clear: both;
+}
+.ba-row {
+    margin-left: -5px;
+}
+
+.ba-row + .ba-row {
+    margin-top: 5px;
+}
+.ba-row > [class*="ba-width-"] {
+    float: left;
+    padding-left: 10px;
+}
+
+[class*="ba-width-"] {
+    width: 100%;
+}
+
+.ba-width-1-2 {
+    width: 42%;
+}
+.ba-width-1-5 {
+    width: 29%;
+}

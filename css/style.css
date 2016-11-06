@@ -2,7 +2,7 @@
 
 
 body{
-	font:  300 14px/1.5 "Lato", Arial, sans-serif;
+	font:  300 16px/1.5 "Lato", Arial, sans-serif;
 }
 
 
@@ -13,6 +13,10 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 700;
 	letter-spacing: .16em;
 	line-height: 1.3;
+	text-transform: uppercase;
+}
+p {
+	margin: 0 0 25px;
 }
 a,
 input[type="submit"],
@@ -24,7 +28,19 @@ button{
 }
 input[type="submit"],
 input[type="button"],
-button,
+button {
+	color:  #ffffff;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	border-width: 2px;
+	border-color:  #3c3c3c;
+	border-style: solid;
+	background-color:  #3c3c3c;
+	width: 81%;
+	height: 50px;
+}
 .ba-button{
 	display: inline-block;
 }
@@ -117,6 +133,7 @@ textarea {
 
 .ba-about {
 	padding: 160px 0;
+	font-size: 16px;
 }
 
 .ba-box {
@@ -140,9 +157,14 @@ textarea {
 
 .ba-box:before {
 	left: 0;
+	top: 0;
 }
-.ba-bpx:after {
+.ba-box:after {
 	right: 0;
+	top: 0;
+}
+.ba-box:last-child {
+	margin-bottom: 0;
 }
 
 .ba-box__title {
@@ -153,17 +175,56 @@ textarea {
 	top: 0;
 	margin: 0;
 	width: 52%;
-	transform: translateY(50%);
+	transform: translateY(-50%);
+}
+.ba-box--light {
+	border-color: #fff;
+}
+.ba-box--light:before, .ba-box--light:after {
+	background-color: #FFF;
 }
 
 .ba-services {
-
+	background: #ADB8CD url(../img/services.jpg) 50% no-repeat;
+	background-size: cover;
+	padding: 130px 0 110px;
+	color: #fff;
 }
 
 .ba-what-we-do {
-
+	padding: 115px 0;
 }
 
 .ba-three-article {
+	margin-bottom: 110px;
+	font-size: 14px;
+}
+.ba-info {
+	margin-bottom: 110px;
+}
+.ba-a__title {
+	position: relative;
+}
+.ba-width__title {
+    position: absolute;
+	width: 100%;
+	left: 54px;
+	bottom: 50%;
+	transform: translateY(-50%);
+	color: #FFFFFF;
+}
 
+.ba-contact {
+	padding: 138px 0;
+}
+
+.ba-contact__submit {
+	margin: 42px 0 50px;
+}
+
+.ba-footer {
+	text-align: center;
+	color:  #3c3c3c;
+	font-size: 14px;
+	font-weight: 400;
 }
